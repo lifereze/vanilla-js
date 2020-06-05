@@ -20,14 +20,14 @@ function addToDo(event){
     todoDiv.appendChild(newToDo);
     // checked button
     const completedButton = document.createElement("button");
-    completedButton.innerHTML= <li class="fas fa-check"></li>
+    completedButton.innerHTML= '<li class="fas fa-check"> </li>';
     completedButton.classList.add("complete-btn");
     todoDiv.appendChild(completedButton);
     // checked trash button
     const trashButton = document.createElement("button");
-    trashButton.innerHTML= <li class="fas fa-check"></li>
+    trashButton.innerHTML= '<li class="fas fa-trash"></li>'
     trashButton.classList.add("complete-btn");
     todoDiv.appendChild(trashButton);
     //append to the list
-    todoList.appendChild(todoDiv)
+    todoList.appendChild(todoDiv);
 }
