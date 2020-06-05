@@ -18,4 +18,14 @@ function addToDo(event){
     newToDo.innerText="hey hey";
     newToDo.classList.add("todo-item");
     todoDiv.appendChild(newToDo);
+    // checked button
+    const completedButton = document.createElement("button");
+    completedButton.innerHTML= <li class="fas fa-check"></li>
+    completedButton.classList.add("complete-btn");
+    todoDiv.appendChild(completedButton);
+    // checked trash button
+    const trashButton = document.createElement("button");
+    trashButton.innerHTML= <li class="fas fa-check"></li>
+    trashButton.classList.add("complete-btn");
+    todoDiv.appendChild(trashButton);
 }
