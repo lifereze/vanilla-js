@@ -10,5 +10,12 @@ todoButton.addEventListener('click', addToDo);
 function addToDo(event){
     // prevent form from submitting
     event.preventDefault();
-    console.log("hello") ;
+    // ToDo DIV
+    const todoDiv = document.createElement("div");
+    todoDiv.classList.add("todo");
+    // create li tags
+    const newToDo = document.createElement("li");
+    newToDo.innerText="hey hey";
+    newToDo.classList.add("todo-item");
+    todoDiv.appendChild(newToDo);
 }
