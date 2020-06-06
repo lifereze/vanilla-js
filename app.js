@@ -40,9 +40,14 @@ function deleteCheck(e){
     //delete to-do list
     if(item.classList[0] === 'trash-btn'){
         const todo = item.parentElement;
-        todo.classList.add("fall")
-        todo.remove();
+        // animation
+        todo.classList.add("fall");
+        todo.addEventListener('transitionend', function(){
+            todo.remove();
+        })
+
     }
+    
     //check todo list
     if(item.classList[0]==='complete-btn'){
         const todo = item.parentElement;
