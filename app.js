@@ -39,10 +39,13 @@ function deleteCheck(e){
     const item=e.target;
     //delete to-do list
     if(item.classList[0] === 'trash-btn'){
-        todoInput.value.remove();
+        const todo = item.parentElement;
+        todo.remove();
+    }
+    //check todo list
+    if(item.classList[0]==='complete-btn'){
+        const todo = item.parentElement;
+        todo.classList.toggle('completed');
     }
     
-}
-.fa-trash, .fa-check{
-    pointer-events:none;
 }
