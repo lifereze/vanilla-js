@@ -43,3 +43,6 @@ function deleteCheck(e){
     }
     
 }
+.fa-trash, .fa-check{
+    pointer-events:none;
+}
