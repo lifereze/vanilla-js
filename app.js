@@ -40,6 +40,7 @@ function deleteCheck(e){
     //delete to-do list
     if(item.classList[0] === 'trash-btn'){
         const todo = item.parentElement;
+        todo.classList.add("fall")
         todo.remove();
     }
     //check todo list
