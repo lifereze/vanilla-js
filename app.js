@@ -34,3 +34,12 @@ function addToDo(event){
     //clear the input after submitting
     todoInput.value="";
 }
+
+function deleteCheck(e){
+    const item=e.target;
+    //delete to-do list
+    if(item.classList[0] === 'trash-btn'){
+        todoInput.value.remove();
+    }
+    
+}
